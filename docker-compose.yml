@@ -1,0 +1,20 @@
+version: "3.3"
+
+services:
+  personal-website:
+    image: nginx
+    volumes:
+      - ./assets:/usr/share/nginx/html/assets:ro
+      - ./index.html:/usr/share/nginx/html/index.html:ro
+      - ./index.txt:/usr/share/nginx/html/index.txt:ro
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.personal_website.rule=Host(`aismagilov.ru`, `ismagilov.de`)"
+      - "traefik.http.routers.personal_website.entrypoints=websecure" 
+      - "traefik.http.routers.personal_website.tls.certresolver=letsencrypt" 
+    networks:
+      - web
+
+networks:
+  web:
+    external: true
