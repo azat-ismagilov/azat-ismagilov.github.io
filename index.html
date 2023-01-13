@@ -224,7 +224,7 @@
 
           <ul class="service-list">
 
-            <li class="service-item">
+            <li onclick="location.href='https://t.me/ismagilovv';" style="cursor:pointer;" class="service-item">
 
               <div class="service-icon-box">
                 <img src="./assets/images/icon-design.svg
@@ -232,26 +232,26 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
+                <h4 class="h4 service-item-title">Telegram Channel</h4>
 
                 <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
+                  Relatively small telegram channel about my travel and programming experience. Primarily in Russian.
                 </p>
               </div>
 
             </li>
 
-            <li class="service-item">
-
+            <li onclick="location.href='https://youtube.com/icpclive';" style="cursor:pointer;" class="service-item">
               <div class="service-icon-box">
                 <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
+                <h4 class="h4 service-item-title">ICPC Live</h4>
 
                 <p class="service-item-text">
-                  High-quality development of sites at the professional level.
+                  Making live streams of ICPC and other competitive programming competitions as a part of ICPC Live
+                  team.
                 </p>
               </div>
 
@@ -283,7 +283,7 @@
                 <h4 class="h4 service-item-title">Photography</h4>
 
                 <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
+                  My personal hobby.
                 </p>
               </div>
 
@@ -310,14 +310,15 @@
         </header>
 
         <section class="timeline">
+          <a href="https://github.com/azat-ismagilov/resume/blob/master/resume.pdf">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="document-outline"></ion-icon>
+              </div>
 
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="document-outline"></ion-icon>
+              <p class="h4">Download PDF</p>
             </div>
-
-            <a class="h4" href="https://github.com/azat-ismagilov/resume/blob/master/resume.pdf">Download PDF</a>
-          </div>
+          </a>
 
         </section>
 
@@ -452,13 +453,16 @@
           <ol class="timeline-list">
 
             <li class="timeline-item">
+              <a href="https://codeforces.com/profile/ismagilov.code">
 
-              <h4 class="h4 timeline-item-title">Codeforces rating 2464</h4>
-              
-              <span>2019 - now</span>
+                <h4 class="h4 timeline-item-title">Codeforces rating 2464</h4>
 
-              <a class="timeline-text" href="https://codeforces.com/profile/ismagilov.code">
-                @ismagilov.code.
+                <span>2019 - now</span>
+
+                <p class="timeline-text">
+                  @ismagilov.code.
+                </p>
+
               </a>
 
             </li>
@@ -478,7 +482,7 @@
             <li class="timeline-item">
 
               <h4 class="h4 timeline-item-title">International Tournament of Informatics</h4>
-              
+
               <span>2017, 2019</span>
 
               <p class="timeline-text">
@@ -490,7 +494,7 @@
             <li class="timeline-item">
 
               <h4 class="h4 timeline-item-title">Innopolis Open Olympiad in Informatics</h4>
-              
+
               <span>2019, 2020</span>
 
               <p class="timeline-text">
@@ -603,15 +607,11 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web design</button>
+              <button data-filter-btn>Backend</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
+              <button data-filter-btn>Computer vision</button>
             </li>
 
           </ul>
@@ -635,15 +635,11 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web design</button>
+                <button data-select-item>Backend</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
+                <button data-select-item>Computer vision</button>
               </li>
 
             </ul>
@@ -652,164 +648,110 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="backend">
+              <a href="https://github.com/icpc/live-v3">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                  <img src="./assets/images/project-icpclive.jpg" alt="ICPC Live v3" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Finance</h3>
+                <h3 class="project-title">ICPC Live</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Backend</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="computer vision">
+              <a href="https://github.com/azat-ismagilov/icpc-faces">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                  <img src="./assets/images/project-icpcfaces.jpg" alt="ICPC Faces" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Orizon</h3>
+                <h3 class="project-title">ICPC Live</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Computer vision</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="backend">
+              <a href="https://github.com/azat-ismagilov/mathkvbot">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                  <img src="./assets/images/project-github.jpg" alt="Telegram bot for popular math game" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Fundo</h3>
+                <h3 class="project-title">Telegram bot for popular math game</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">Backend</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="backend">
+              <a href="https://github.com/azat-ismagilov/advent-of-code-kotlin-2022">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                  <img src="./assets/images/project-aoc22.jpg" alt="Advent of code Kotlin 2022" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Brawlhalla</h3>
+                <h3 class="project-title">Advent of Code Kotlin 2022</h3>
 
-                <p class="project-category">Applications</p>
+                <p class="project-category">Backend</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="backend">
+              <a href="https://github.com/azat-ismagilov/standings">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                  <img src="./assets/images/project-github.jpg" alt="Auto VKOSHP standings" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">DSM.</h3>
+                <h3 class="project-title">Auto VKOSHP standings</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">Backend</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="backend">
+              <a href="https://github.com/azat-ismagilov/opentour">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                  <img src="./assets/images/project-github.jpg" alt="Auto OpenTour" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">MetaSpark</h3>
+                <h3 class="project-title">Auto OpenTour</h3>
 
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
+                <p class="project-category">Backend</p>
 
               </a>
             </li>
