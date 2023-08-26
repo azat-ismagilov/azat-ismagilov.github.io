@@ -2,16 +2,14 @@ version: "3.3"
 
 services:
   personal-website:
-    image: nginx
-    volumes:
-      - ./assets:/usr/share/nginx/html/assets:ro
-      - ./index.html:/usr/share/nginx/html/index.html:ro
-      - ./index.txt:/usr/share/nginx/html/index.txt:ro
+    image: ghcr.io/azat-ismagilov/azat-ismagilov.github.io:master
+    container_name: personal-website
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.personal_website.rule=Host(`aismagilov.ru`, `ismagilov.de`)"
-      - "traefik.http.routers.personal_website.entrypoints=websecure" 
-      - "traefik.http.routers.personal_website.tls.certresolver=letsencrypt" 
+      - "traefik.http.routers.personal_website.entrypoints=websecure"
+      - "traefik.http.routers.personal_website.tls.certresolver=letsencrypt"
+      - "com.centurylinklabs.watchtower.enable=true"
     networks:
       - web
 
