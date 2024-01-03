@@ -8,12 +8,6 @@ Backend developer
 
 Show Contacts
 
-Email
-azat@ismagilov.de
-
-Phone
-+49 15-228-321-550
-
 Telegram
 https://t.me/ismagilovcode
 
